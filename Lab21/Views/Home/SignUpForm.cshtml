@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "SignUpForm";
+}
+<h1>Welcome to the Grand Circus Rewards program</h1>
+<h2>Sign Up Form</h2>
+
+<form action="/Home/AddNewUser" method="post">
+First Name: <input type="text" name="First" required /><br />
+Last Name: <input type="text" name="Last" required /><br />
+Username: <input type="text" name="Username" required /><br />
+Password: <input type="password" name="Password" required /><br />
+Email: <input type="email" name=" Email" placeholder="example@example.com" /><br />
+Address:<input type="text" name="Address" required />
+City:<input type="text" name="Address" required />
+State:<input type="text" name="State" required />
+Birthday<input type="date" name="Bday" required /> <br />
+<h3>Please select the gender you identify with</h3>
+<input type="radio" name="Male" value="male" checked> Male<br>
+<input type="radio" name="Female" value="female"> Female<br>
+<input type="radio" name="Other" value="other"> Other
+<input type="submit" value="Submit">
+</form>
